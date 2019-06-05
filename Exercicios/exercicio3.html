@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exercício3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <h1>Primeiro</h1>
+        <input type="text" v-model="a">
+        <h1>Segundo</h1>
+        <input type="text" v-model="b">
+        <h1>Operação</h1>
+        <input type="text" v-model="c">
+        <h1>{{res}}</h1>
+        <br><br>
+        <button v-on:click="nome(c)">Calculo</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+
+    <script>
+
+        var aplicacao = new Vue({
+            el: '#app',
+            data: {
+                a: '0',
+                b: '0',
+                c: '',
+                res: '0'
+            },
+            methods: {
+                nome: function (c) {
+                    switch (c) {
+                        case '+':
+                            this.res = this.a * 1 + this.b * 1
+                            break;
+                        case '-':
+                            this.res = this.a - this.b
+                            break;
+                        case '*':
+                            this.res = this.a * this.b
+                            break;
+                        case '/':
+                            this.res = this.a / this.b
+                            break;
+                        default:
+                            this.res = 'Inválido'
+                    }
+                }
+            }
+        })
+    </script>
+
+
+</body>
+
+</html>

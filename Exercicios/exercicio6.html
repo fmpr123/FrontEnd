@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exercício6</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <h1>Factorial</h1>
+        <input type="text" v-model="r">
+        <button v-on:click="calc(r)">Mostrar</button>
+        <h1>{{res}}</h1>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+
+    <script>
+
+        var aplicacao = new Vue({
+            el: '#app',
+            data: {
+                r:0,
+                res:0
+            },
+            methods: {
+                calc: function (r) {
+                    while(this.r!=0){
+                        
+                        this.res=this.res+(this.r*this.res)
+                        this.r=this.r-1
+
+                    }
+                }
+            }
+        })
+    </script>
+
+
+</body>
+
+</html>

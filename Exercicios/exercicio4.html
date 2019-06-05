@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exercício4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <h1>Múltiplos de 5</h1>
+        <button v-on:click="calc()">Mostrar</button>
+        <h1>{{r}}</h1>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+
+    <script>
+
+        var aplicacao = new Vue({
+            el: '#app',
+            data: {
+                res: 5,
+                mul: 1,
+                r:''
+            },
+            methods: {
+                calc: function () {
+                    while(this.res<20)
+                     {
+                        this.r=this.r+' '+this.res
+                        this.mul=this.mul+1
+                        this.res=this.mul*5
+                        
+                        
+                     }
+                }
+            }
+        })
+    </script>
+
+
+</body>
+
+</html>

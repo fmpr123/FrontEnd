@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exercício2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <h1>Insira o mês</h1>
+        <input type="text" v-model="a">
+        <button v-on:click="nome(a)">Mês</button>
+        <h1>{{res}}</h1>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+
+    <script>
+
+        var aplicacao = new Vue({
+            el: '#app',
+            data: {
+                a: '0',
+                res: ""
+            },
+            methods: {
+                nome: function (a) {
+                    switch (a) {
+                        case '1':
+                            this.res = 'Janeiro'
+                            break;
+                        case '2':
+                            this.res = 'Fevereiro'
+                            break;
+                        case '3':
+                            this.res = 'Março'
+                            break;
+                        case '4':
+                            this.res = 'Abril'
+                            break;
+                        case '5':
+                            this.res = 'Maio'
+                            break;
+                        case '6':
+                            this.res = 'Junho'
+                            break;
+                        case '7':
+                            this.res = 'Julho'
+                            break;
+                        case '8':
+                            this.res = 'Agosto'
+                            break;
+                        case '9':
+                            this.res = 'Setembro'
+                            break;
+                        case '10':
+                            this.res = 'Outubro'
+                            break;
+                        case '11':
+                            this.res = 'Novembro'
+                            break;
+
+                        case '12':
+                            this.res = 'Dezembro'
+                            break;
+
+                        default:
+                        this.res = 'Mês Inválido'
+                    }
+
+
+                }
+
+            }
+        })
+    </script>
+
+</body>
+
+</html>
