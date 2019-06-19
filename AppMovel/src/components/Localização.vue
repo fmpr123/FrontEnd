@@ -8,19 +8,22 @@
         </ion-toolbar>
       </ion-header>
       <!-- Fim Header -->
-      <ion-content >
+      <ion-content>
         <ion-card class="morada">
           <ion-card-header>
             <ion-card-title padding color="light">Morada</ion-card-title>
             <ion-card-subtitle padding class="morada_text">Gamestop, Games & Gaming</ion-card-subtitle>
           </ion-card-header>
-          <ion-card-content class="morada_text">Lda., Caminho da Azeitona nº 24<p></p>
-          Fração A (Acima do Dolce Vita)<p></p>
-          Santo António - Funchal</ion-card-content>
+          <ion-card-content class="morada_text">
+            Lda., Caminho da Azeitona nº 24
+            <p></p>Fração A (Acima do Dolce Vita)
+            <p></p>Santo António - Funchal
+          </ion-card-content>
         </ion-card>
 
         <!-- GOOGLE MAPS HERE -->
-
+        <div id="map"></div>
+        <!-- -------------- -->
       </ion-content>
     </ion-app>
   </div>
@@ -42,10 +45,10 @@ export default {
 .container-navbar {
   position: fixed;
 }
-.morada{
-    background-image: url('../assets/img/morada.jpg')
+.morada {
+  background-image: url("../assets/img/morada.jpg");
 }
-.morada_text{
-    color: white;
+.morada_text {
+  color: white;
 }
 </style>
