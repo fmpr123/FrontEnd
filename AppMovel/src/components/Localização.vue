@@ -22,7 +22,12 @@
         </ion-card>
 
         <!-- GOOGLE MAPS HERE -->
-        <div id="map"></div>
+        <GmapMap
+        :center="{lat:10,lng:10}"
+        :zoom="7"
+        map-type-id="terrain"
+        style="width:50px;height:50px"
+        ></GmapMap>
         <!-- -------------- -->
       </ion-content>
     </ion-app>
