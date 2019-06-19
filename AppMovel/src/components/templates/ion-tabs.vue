@@ -13,7 +13,7 @@
               <ion-label>Produtos</ion-label>
             </ion-tab-button>
 
-            <ion-tab-button tab="acount">
+            <ion-tab-button tab="account">
               <ion-icon name="contacts"></ion-icon>
               <ion-label>Conta</ion-label>
             </ion-tab-button>
@@ -24,9 +24,9 @@
               <!-- <ion-badge>0</ion-badge> -->
             </ion-tab-button>
 
-            <ion-tab-button tab="ubicacao">
+            <ion-tab-button tab="localizacao">
               <ion-icon name="map"></ion-icon>
-              <ion-label>Ubicação</ion-label>
+              <ion-label>Localização</ion-label>
             </ion-tab-button>
 
             <ion-tab-button tab="about">
